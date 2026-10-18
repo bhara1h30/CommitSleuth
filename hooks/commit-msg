@@ -1,0 +1,6 @@
+#!/bin/sh
+# Rejects commit messages that do not start with a change request ID, e.g. "CR-003: add post-failure hook"
+if ! grep -qE '^(CR-[0-9]{3}: .+|Merge .*)' "$1"; then
+  echo "ERROR: commit message must start with 'CR-00X: description'"
+  exit 1
+fi

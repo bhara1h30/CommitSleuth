@@ -1,0 +1,7 @@
+database/*.db
+build.log
+.env
+__pycache__/
+*.pyc
+maven/target/
+reports/notifications.log
