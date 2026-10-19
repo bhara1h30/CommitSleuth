@@ -43,3 +43,4 @@ if __name__ == "__main__":   # customization demo: python analyzer/scorer.py
     for r in rank(sample, log, "compile", cfg):
         print(f'{r["hash"]}  {r["author"]}  confidence={r["score"]}  {r["message"]}')
     print(decide(rank(sample, log, "compile", cfg)[0], cfg))
+# demo
